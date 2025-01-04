@@ -1,116 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Clone</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #ff0000;
-      color: white;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header input[type="text"] {
-      width: 50%;
-      padding: 5px;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
-      padding: 10px;
-    }
-    .video {
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      overflow: hidden;
-      cursor: pointer;
-    }
-    .video img {
-      width: 100%;
-    }
-    .video .title {
-      padding: 5px;
-      font-size: 14px;
-    }
-    .player {
-      max-width: 800px;
-      margin: 20px auto;
-      text-align: center;
-    }
-    .player iframe {
-      width: 100%;
-      height: 450px;
-    }
-  </style>
+  <title>Thư Viện Toán</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>Thư Viện Toán</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#resources">Tài liệu</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <h1>YouTube Clone</h1>
-  <input type="text" id="search" placeholder="Search...">
-</header>
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Kho tài liệu toán học miễn phí</h2>
+        <p>Tìm kiếm, học tập và chia sẻ kiến thức toán học.</p>
+      </div>
+    </section>
 
-<div class="video-grid" id="videoGrid">
-  <!-- Videos will be loaded dynamically here -->
-</div>
+    <section id="resources" class="resources">
+      <div class="container">
+        <h2>Danh mục tài liệu</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Đại số</h3>
+            <p>Các tài liệu về đại số cơ bản và nâng cao.</p>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+          <div class="card">
+            <h3>Hình học</h3>
+            <p>Khám phá các bài giảng về hình học.</p>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+          <div class="card">
+            <h3>Giải tích</h3>
+            <p>Tài liệu giải tích cho học sinh và sinh viên.</p>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<div class="player" id="player" style="display: none;">
-  <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
-  <button onclick="closePlayer()">Close</button>
-</div>
-
-<script>
-  const videos = [
-    { id: 'dQw4w9WgXcQ', title: 'Video 1' },
-    { id: 'kJQP7kiw5Fk', title: 'Video 2' },
-    { id: '3JZ_D3ELwOQ', title: 'Video 3' }
-  ];
-
-  const videoGrid = document.getElementById('videoGrid');
-  const player = document.getElementById('player');
-  const videoPlayer = document.getElementById('videoPlayer');
-  const search = document.getElementById('search');
-
-  function loadVideos(filter = '') {
-    videoGrid.innerHTML = '';
-    videos
-      .filter(video => video.title.toLowerCase().includes(filter.toLowerCase()))
-      .forEach(video => {
-        const videoElement = document.createElement('div');
-        videoElement.className = 'video';
-        videoElement.innerHTML = `
-          <img src="https://img.youtube.com/vi/${video.id}/0.jpg" alt="${video.title}">
-          <div class="title">${video.title}</div>
-        `;
-        videoElement.onclick = () => playVideo(video.id);
-        videoGrid.appendChild(videoElement);
-      });
-  }
-
-  function playVideo(videoId) {
-    videoPlayer.src = `https://www.youtube.com/embed/${videoId}`;
-    player.style.display = 'block';
-  }
-
-  function closePlayer() {
-    videoPlayer.src = '';
-    player.style.display = 'none';
-  }
-
-  search.addEventListener('input', () => loadVideos(search.value));
-
-  // Load initial videos
-  loadVideos();
-</script>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Thư Viện Toán. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luật Chơi</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <h1><a href="thi.html" style="text-decoration: none;"> <font color="green">Học</font><font color="lightgreen">Chơi</font><font color="yellow">Cờ</font><font color="whiteyellow">Vua</font> <img src="pawn.webp" width="25" height="25" ></a></h1>
+        
+        <nav class="navbar">
+            <center>
+            <ul class="nav-links">
+                <li><a href="intro.html">Giới thiệu</a></li>
+                <li><a href="rules.html">Luật chơi</a></li>
+                <li><a href="strategies.html">Chiến thuật</a></li>
+                <li><a href="practice.html">Luyện tập</a></li>
+            </ul> 
+            </center>
+        </nav>
+
+    </header>
+    <main>
+        <h2 class="item">!!!. Cách sắp xếp bàn cờ</h2>
+        <h3 class="h4" style="text-align: left;">Đặt bàn cờ đúng hướng:
+<table>
+<tr> <th>      <section>    Bàn cờ phải được đặt sao cho ô màu trắng nằm ở góc dưới cùng bên phải (góc h1 từ góc nhìn của người chơi).
+            <br><br>Hàng đầu tiên (hàng 1) và hàng cuối cùng (hàng 8):
+            
+            <br><br>Hàng này dành cho các quân cờ chính (vua, hậu, xe, mã, tượng).
+
+            <br><br>Cách sắp xếp từ trái sang phải (theo hàng 1 cho Trắng, hàng 8 cho Đen):
+            <br><br>Xe (Rook): Đặt ở 2 góc ngoài cùng (a1 và h1 cho Trắng; a8 và h8 cho Đen).
+            <br><br>Mã (Knight): Đặt cạnh xe (b1 và g1 cho Trắng; b8 và g8 cho Đen).
+            <br><br>Tượng (Bishop): Đặt cạnh mã (c1 và f1 cho Trắng; c8 và f8 cho Đen).
+            <br><br>Hậu (Queen): Đặt trên ô cùng màu với quân Hậu (Trắng ở d1; Đen ở d8).
+            <br><br>Vua (King): Đặt trên ô còn lại (Trắng ở e1; Đen ở e8).
+            <br><br>Hàng thứ hai và hàng thứ bảy là hàng dành cho các quân tốt (Pawns)
+            
+            <br>
+            <br>Trắng: Toàn bộ hàng 2 (a2 đến h2).
+            <br><br>Đen: Toàn bộ hàng 7 (a7 đến h7).</th>  
+            
+<th><img  src="sapxepbanci.png" width="400" height="400"></section></th>
+ </tr>       </table>
+</h3>
+        <h2 class="item">1. Vua (King)</h2>
+        <h3 class="h3">Di chuyển: Vua chỉ có thể di chuyển 1 ô trong bất kỳ hướng nào: lên, xuống, trái, phải, hoặc chéo. <br>
+        Lưu ý: Vua không thể di chuyển đến ô bị chiếu, tức là nơi có quân cờ đối phương có thể tấn công. <br>
+        Nếu vua bị chiếu và không thể di chuyển để thoát khỏi tình thế chiếu, thì trận đấu kết thúc với chiến thắng cho đối thủ. <br>
+        Đặc biệt: Vua có thể tham gia vào một nước đi đặc biệt gọi là "nhập thành", nếu điều kiện cho phép.
+        <center>
+            <a href="vua.html">
+                <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+
+            </a>
+            </center>
+        </h3>
+        <h2 class="item">2. Hậu (Queen)</h2>
+        <h3 class="h3">Di chuyển: Hậu là quân mạnh nhất trong cờ vua vì có thể di chuyển theo bất kỳ hướng nào: thẳng (hàng ngang hoặc dọc) và chéo. <br>
+        Lưu ý: Hậu có thể di chuyển bao nhiêu ô tùy thích trong một lần đi, miễn là không có quân cờ nào đứng trên đường đi của nó.
+        <center>
+            <a href="hậu.html">
+                <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+
+            </a>
+            </center>        </h3>
+        <h2 class="item">3. Xe (Rook)</h2>
+        <h3 class="h3"> chuyển: Xe di chuyển thẳng theo hàng ngang hoặc dọc. Nó có thể đi qua bất kỳ số ô nào miễn là không có quân cờ khác trên đường đi của nó. <br>
+        Lưu ý: Xe không thể di chuyển chéo. Xe có thể tham gia vào nước đi "nhập thành" nếu điều kiện cho phép.
+        <center>
+            <a href="xe.html">
+                <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+
+            </a>
+            </center>        </h3>
+        <h2 class="item">4. Mã (Knight)</h2>
+        <h3 class="h3">Di chuyển: Mã có một kiểu di chuyển đặc biệt. Mã di chuyển theo hình chữ L: di chuyển 2 ô theo một hướng (hàng ngang hoặc dọc), sau đó di chuyển 1 ô theo hướng vuông góc.<br>
+        Lưu ý: Mã là quân cờ duy nhất có thể "nhảy qua" các quân cờ khác. Điều này có nghĩa là mã có thể di chuyển qua những quân cờ cản trở mà không bị ảnh hưởng. <br>
+        Đặc biệt: Mã có thể di chuyển đến những ô bị bao vây bởi quân cờ đối phương mà vẫn không bị bắt, vì kiểu di chuyển đặc biệt của nó.
+        <center>
+            <a href="mã.html">
+                <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+
+            </a>
+            </center>        </h3>
+        <h2 class="item">5. Tượng (Bishop)</h2>
+        <h3 class="h3">Di chuyển: Tượng di chuyển chéo, và có thể di chuyển bao nhiêu ô tùy ý miễn là không có quân cờ nào cản trở. <br>
+        Lưu ý: Tượng chỉ di chuyển trên các ô có màu sắc mà nó bắt đầu (nếu tượng bắt đầu trên ô trắng, nó chỉ di chuyển trên các ô trắng).
+        <center>
+            <a href="tượng.html">
+                <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+
+            </a>
+            </center>        </h3>
+        <h2 class="item">6. Tốt (Pawn)</h2>
+        <h3 class="h3" >Di chuyển: Tốt di chuyển thẳng 1 ô về phía trước, nhưng khi bắt quân đối phương, nó di chuyển chéo 1 ô. <br>
+        Đặc biệt: Tốt có một đặc điểm là có thể di chuyển 2 ô trong nước đi đầu tiên của nó (khi nó chưa di chuyển từ vị trí xuất phát). <br>
+        Thăng cấp: Khi một quân Tốt đi đến hàng cuối của bàn cờ (hàng 8 đối với Tốt trắng hoặc hàng 1 đối với Tốt đen), nó có thể được "thăng cấp" thành một quân cờ mạnh hơn, thường là Hậu.
+        <center>
+            <a href="tốt.html">
+                <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+
+            </a>
+            </center>        </h3>
+            <h2 class="item">7. Nhập thành (Castle)</h2>
+            <h3 class="h3" >Nhập thành là một nước đi đặc biệt, duy nhất trong cờ vua, cho phép bạn di chuyển vua và xe trong cùng một lượt. Đây là một cách để bảo vệ vua và đưa xe vào thế tấn công.
+            <center>
+                <a href="nhapthanh.html">
+                    <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+    
+                </a>
+                </center>        </h3>
+                <h2 class="item">8. Bắt tốt qua đường</h2>
+                <h3 class="h3" >Bắt tốt qua đường là một nước đi đặc biệt trong cờ vua, áp dụng khi một quân tốt vừa đi nước đầu tiên của nó và tiến 2 ô, đi ngang qua ô mà quân tốt đối phương có thể bắt nếu nó chỉ đi 1 ô.
+                <center>
+                    <a href="battotquaduong.html">
+                        <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+        
+                    </a>
+                    </center>        </h3>
+                    <h2 class="item">9. Phong cấp</h2>
+                    <h3 class="h3" >Phong cấp là một quy tắc đặc biệt trong cờ vua, áp dụng khi một quân tốt di chuyển đến hàng cuối cùng trên bàn cờ (hàng 8 đối với Trắng và hàng 1 đối với Đen). Khi đó, quân tốt sẽ được thay thế bằng một quân cờ khác, thường là quân Hậu.
+                    <center>
+                        <a href="phongcap.html">
+                            <button class="button" style="font-size: 15px; background-color: rgb(45, 66, 205);color: rgb(202, 228, 98); border-radius: 25px; border: 2px solid #000000;">Chi tiết</button>
+            
+                        </a>
+                        </center>        </h3>
+    </main>
+    
+        
+    
+    
+
+    <footer>
+        <center>
+        <a href="https://www.chess.com/">
+        <button class="button" style="font-size: 25px; background-color: green;color: grey; border-radius: 25px;">Thực chiến tại chess.com ngay</button>
+        </a>
+        </center>
+        <br>
+            <center>
+            <a href="https://lichess.org/">
+            <button class="button" style="font-size: 25px; background-color: rgb(234, 241, 234);color: rgb(7, 7, 7); border-radius: 25px;">Thực chiến tại lichess ngay</button>
+            </a>
+            </center>
+        <br>
+        <center><p>liên hệ với tôi nếu cần: <a href="https://mail.google.com/mail/u/0/#inbox" ><font color=red>dongdhdong@gmail.com</font></a></p></center>
+    </footer>
+</body>
+</html>
